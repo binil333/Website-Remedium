@@ -72,29 +72,31 @@
 
   <div class="page-section">
     <div class="container">
+    <form action="https://formspree.io/f/myylvrob" method="POST" id="my-form">
       <h1 class="text-center wow fadeInUp">Feedback or Contact Us</h1>
 
       <form class="main-form">
         <div class="row mt-5 ">
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="Full name">
+            <input type="text" name="Full name" id="Full name" class="form-control" placeholder="Full name">
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control" placeholder="Email address..">
+            <input type="text" name="Email address" id="Email address" class="form-control" placeholder="Email address..">
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-            <input type="date" class="form-control">
+            <input type="date" name="date" id="date" class="form-control">
           </div>
           <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
             <select name="departement" id="departement" class="custom-select">
-              <option value="general">App</option>
-              <option value="cardiology">Development</option>
-              <option value="dental">Disease</option>
-              <option value="neurology">Deployment</option>
+              <option value="App">App</option>
+              <option value="Development">Development</option>
+              <option value="Disease">Disease</option>
+              <option value="Deployment">Deployment</option>
+              <option value="Other">Other..</option>
             </select>
           </div>
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <input type="text" class="form-control" placeholder="Number..">
+            <input type="text" name="Number" id="Number" class="form-control" placeholder="Number..">
           </div>
           <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
             <textarea name="message" id="message" class="form-control" rows="6"
@@ -104,6 +106,8 @@
 
         <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
       </form>
+      <script src="../assets/js/main.js"></script>
+    </form>
     </div>
   </div> <!-- .page-section -->
 
@@ -130,8 +134,9 @@
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Partners</h5>
+          <h5>Developers</h5>
           <ul class="footer-menu">
+            <li><a href="#">Binil Varghese</a></li>
             <li><a href="#">Ajay Anthwal</a></li>
             <li><a href="#">Kevin Anthony</a></li>
             <li><a href="#">Jacob Charles</a></li>
